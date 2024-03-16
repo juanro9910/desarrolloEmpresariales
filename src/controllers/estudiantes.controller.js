@@ -21,7 +21,7 @@ export const consultarEstudiantes = async (req, res) => {
         });
     } catch (error) {
         // console.error('Error en el bloque catch: ', error);
-        return res.status(400).json({
+        return res.status(404).json({
             message: 'Consulta no exitosa',
             error: error
         });
